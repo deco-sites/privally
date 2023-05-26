@@ -32,7 +32,7 @@ function GlobalTags() {
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
       {/* PrivallyApp */}
-      {/* <script type="text/javascript" id="PrivallyApp" src="https://app.privally.global/app.next.js" pid="f2b265-306786" async></script> */}
+      <script type="text/javascript" id="PrivallyApp" src="https://app.privally.global/app.next.js" pid="f2b265-306786" async></script>
     </Head>
   );
 }
