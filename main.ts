@@ -13,4 +13,8 @@ await start($live(manifest, site), {
   plugins: [
     partytownPlugin(),
   ],
+  render: (ctx, render) => {
+    ctx.lang = "pt-BR";
+    render();
+  },
 });
