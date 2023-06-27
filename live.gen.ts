@@ -3,8 +3,9 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import { DecoManifest } from "$live/types.ts";
-import * as $$$$0 from "./routes/styles.css.ts";
-import * as $$$$1 from "./routes/_app.tsx";
+import * as $$$$0 from "./routes/proxy.ts";
+import * as $$$$1 from "./routes/styles.css.ts";
+import * as $$$$2 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/AddToCartButton.tsx";
 import * as $$$$$1 from "./islands/HeaderButton.tsx";
 import * as $$$$$2 from "./islands/HeaderModals.tsx";
@@ -151,7 +152,7 @@ import * as i2$$$$$$19 from "deco-sites/std/actions/vtex/wishlist/removeItem.ts"
 
 const manifest = {
   "routes": {
-    "./routes/_app.tsx": $$$$1,
+    "./routes/_app.tsx": $$$$2,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/[...catchall].tsx": $live_catchall,
     "./routes/index.tsx": $live_catchall,
@@ -164,7 +165,8 @@ const manifest = {
     "./routes/live/previews/index.tsx": $live_previews_index,
     "./routes/live/release.ts": $live_release,
     "./routes/live/workbench.ts": $live_workbench,
-    "./routes/styles.css.ts": $$$$0,
+    "./routes/proxy.ts": $$$$0,
+    "./routes/styles.css.ts": $$$$1,
   },
   "islands": {
     "./islands/AddToCartButton.tsx": $$$$$0,
