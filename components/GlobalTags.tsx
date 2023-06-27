@@ -53,7 +53,7 @@ function GlobalTags() {
       {/* End Meta Pixel Code */}
 
       {/* PushNews */}
-      <script src="https://cdn.pn.vg/push/pushnews-launcher.js?appId=c4c07fbe-596f-49b8-a55a-672e6e72bc2d" async></script>
+      {/* <script src="https://cdn.pn.vg/push/pushnews-launcher.js?appId=c4c07fbe-596f-49b8-a55a-672e6e72bc2d" async></script> */}
     </Head>
   );
 }
