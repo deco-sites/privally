@@ -32,10 +32,18 @@ function GlobalTags() {
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
       {/* PrivallyApp */}
-      <script type="text/javascript" id="PrivallyApp" src="https://app.privally.global/app.js" pid="f2b265-306786" async></script>
+      <script
+        type="text/javascript"
+        id="PrivallyApp"
+        src="https://app.privally.global/app.next.js"
+        pid="f2b265-306786"
+        async
+      >
+      </script>
 
       {/* Meta Pixel Code */}
-      {/* <script>
+      {
+        /* <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -49,7 +57,8 @@ function GlobalTags() {
       </script>
       <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=639959938027628&ev=PageView&noscript=1"
-      /></noscript> */}
+      /></noscript> */
+      }
       {/* End Meta Pixel Code */}
 
       {/* PushNews */}
