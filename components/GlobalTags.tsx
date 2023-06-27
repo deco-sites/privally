@@ -35,7 +35,7 @@ function GlobalTags() {
       <script
         type="text/javascript"
         id="PrivallyApp"
-        src="https://app.privally.global/app.js"
+        src="https://app.privally.global/app.next.js"
         pid="f2b265-306786"
         async
       >
