@@ -27,7 +27,8 @@ const ALLOWLIST_URLS: Set<string> = new Set([
   "b.smrk.io",
   "app.privally.global",
   "privally-console.wm.r.appspot.com",
-  "api.privally.global"
+  "api.privally.global",
+  "static.privally.io"
 ]);
 
  
@@ -96,15 +97,9 @@ async (req: Request, _: HandlerContext) => {
 
   if (response.status >= 300 && response.status < 400) { // redirect change location header
     const location = headers.get("location");
-    console.log('AQUIII',location, response.status, url.href)
+
     if (location) {
 
-      const test = new URL(`/proxy?url=${location}`, reqUrl.origin);
-
-    //   headers.set(
-    //     "location",
-    //     test,
-    //   );
       headers.set(
         "location",
         location.replace(url.origin, reqUrl.origin),
