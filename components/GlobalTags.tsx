@@ -5,13 +5,13 @@ function GlobalTags() {
     <Head>
 
       {/* PrivallyApp */}
-      {/* <script
+      <script
         type="text/partytown"
         id="PrivallyApp"
         src="https://app.privally.global/app.next.js"
         pid="f2b265-306786"
       >
-      </script> */}
+      </script>
 
       {/* Enable View Transitions API */}
       <meta name="view-transition" content="same-origin" />
