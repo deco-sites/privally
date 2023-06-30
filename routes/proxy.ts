@@ -26,9 +26,9 @@ const ALLOWLIST_URLS: Set<string> = new Set([
   "osp-assets.pn.vg",
   "b.smrk.io",
   "app.privally.global",
-  "privally-console.wm.r.appspot.com",
   "api.privally.global",
-  "static.privally.io"
+  "static.privally.io",
+  "ss.privally.dev",
 ]);
 
  
