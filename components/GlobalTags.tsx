@@ -8,7 +8,7 @@ function GlobalTags() {
       <script
         type="text/partytown"
         id="PrivallyApp"
-        src="https://app.privally.global/app.next.4.js"
+        src="https://app.privally.global/app.next.5.js"
         pid="f2b265-1b86cb"
       >
       </script>
