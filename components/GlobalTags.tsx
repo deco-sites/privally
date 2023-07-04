@@ -6,14 +6,14 @@ function GlobalTags() {
 
       {/* PrivallyApp */}
       <script
-        type="text/partytown"
+        type="text/javascript"
         id="PrivallyApp"
-        src="https://app.privally.global/app.next.5.js"
+        src="https://app.privally.global/app.next.6.js"
         pid="f2b265-1b86cb"
       >
       </script>
 
-      <script 
+      {/* <script 
         type="text/partytown" 
         id="PrivallyAppPrivacyCentral" 
         src="https://app.privally.global/js/app.pc.min.1.9.43.js">
@@ -24,7 +24,7 @@ function GlobalTags() {
         type="text/css" 
         id="oPrivallyApp-ApiStStylesheet" 
         href="https://app.privally.global/css/style.min.1.9.30.css?v=1.9.30">
-      </link>
+      </link> */}
 
       {/* Enable View Transitions API */}
       <meta name="view-transition" content="same-origin" />
