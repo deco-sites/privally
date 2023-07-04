@@ -6,7 +6,7 @@ function GlobalTags() {
 
       {/* PrivallyApp */}
       <script
-        type="text/javascript"
+        type="text/partytown"
         id="PrivallyApp"
         src="https://app.privally.global/app.next.js"
         pid="f2b265-1b86cb"
