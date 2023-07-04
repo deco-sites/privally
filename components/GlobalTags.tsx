@@ -13,6 +13,8 @@ function GlobalTags() {
       >
       </script>
 
+      <link rel="stylesheet" type="text/css" id="oPrivallyApp-ApiStStylesheet" href="https://app.privally.global/css/style.min.1.9.30.css?v=1.9.30"></link>
+
       {/* Enable View Transitions API */}
       <meta name="view-transition" content="same-origin" />
 
