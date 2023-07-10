@@ -55,7 +55,7 @@ function GlobalTags() {
       <link rel="manifest" href={asset("/site.webmanifest")} />
 
       {/* PushNews */}
-      <script type="text/partytown" src="https://cdn.pn.vg/push/pushnews-launcher.js?appId=c4c07fbe-596f-49b8-a55a-672e6e72bc2d" async></script>
+      <script type="text/javascript" src="https://cdn.pn.vg/push/pushnews-launcher.js?appId=c4c07fbe-596f-49b8-a55a-672e6e72bc2d" async></script>
       
     </Head>
   );
