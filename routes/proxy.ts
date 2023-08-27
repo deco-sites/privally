@@ -1,7 +1,5 @@
 import { HandlerContext, Handlers } from "$fresh/server.ts";
 
- 
-
 const ALLOWLIST_URLS: Set<string> = new Set([
   "110005032.collect.igodigital.com",
   "www.googletagmanager.com",
@@ -31,8 +29,6 @@ const ALLOWLIST_URLS: Set<string> = new Set([
   "ss.privally.dev",
 ]);
 
- 
-
 const HOP_BY_HOP = [
   "Keep-Alive",
   "Transfer-Encoding",
@@ -44,8 +40,6 @@ const HOP_BY_HOP = [
   "Proxy-Authenticate",
 ];
 
- 
-
 const generateProxyHandler = (
   { cachePolicy }: { cachePolicy: "cache" | "forward" },
 ) =>
@@ -53,8 +47,6 @@ async (req: Request, _: HandlerContext) => {
   const reqUrl = new URL(req.url);
   const _url = (reqUrl).searchParams.get("url");
   const url = _url ? new URL(_url) : undefined;
-
- 
 
   if (
     !url ||
@@ -66,13 +58,9 @@ async (req: Request, _: HandlerContext) => {
     });
   }
 
- 
-
   const reqHeaders = new Headers(req.headers);
   HOP_BY_HOP.forEach((h) => reqHeaders.delete(h));
   reqHeaders.set("x-forwarded-host", reqUrl.host);
-
- 
 
   const response = await fetch(url, {
     headers: reqHeaders,
@@ -80,8 +68,6 @@ async (req: Request, _: HandlerContext) => {
     method: req.method,
     body: req.body,
   });
-
- 
 
   const headers = new Headers(response.headers);
   headers.delete("cross-origin-resource-policy");
@@ -93,22 +79,16 @@ async (req: Request, _: HandlerContext) => {
     resCacheControl && (headers.set("cache-control", resCacheControl));
   }
 
- 
-
   if (response.status >= 300 && response.status < 400) { // redirect change location header
     const location = headers.get("location");
 
     if (location) {
-
       headers.set(
         "location",
         location.replace(url.origin, reqUrl.origin),
       );
-
     }
   }
-
- 
 
   return new Response(response.body, {
     status: response.status,
@@ -116,8 +96,6 @@ async (req: Request, _: HandlerContext) => {
     headers,
   });
 };
-
- 
 
 export const handler: Handlers = {
   GET: generateProxyHandler({ cachePolicy: "cache" }),
