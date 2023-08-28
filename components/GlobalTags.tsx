@@ -14,7 +14,7 @@ function GlobalTags() {
       </script> */}
 
       <script
-        type="text/javascript"
+        type="text/partytown"
         id="PrivallyApp"
         src="/static-bar.js"
         // @ts-ignore pid
