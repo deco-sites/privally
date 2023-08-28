@@ -13,13 +13,13 @@ function GlobalTags() {
       >
       </script> */}
 
-      {/* <script
-        type="text/partytown"
+      <script
+        type="text/javascript"
         id="PrivallyApp"
         src="/static-bar.js"
         // @ts-ignore pid
         pid="f2b265-1b86cb"
-      ></script> */}
+      ></script>
 
       {/* Enable View Transitions API */}
       <meta name="view-transition" content="same-origin" />
