@@ -17,5 +17,9 @@
     <div id=oPrivallyApp style=display:block;opacity:1.012><div id=oPrivallyApp-Bar><div class=oPrivallyApp-Clearfix></div><div class=oPrivallyApp-BarCookies><div id=oPrivallyApp-BarContent><div id=oPrivallyApp-AlertBox><p>Clicando em "Aceito todos os Cookies", você concorda com o armazenamento de cookies no seu dispositivo para melhorar a experiência e navegação no site.</p></div><div id=oPrivallyApp-OptionsBox><div id=oPrivallyApp-SettingsBox><span id=oPrivallyApp-SettingsLink> Preferências </span></div><div id=oPrivallyApp-RejectAllBox><span id=oPrivallyApp-RejectAll class=oPrivallyApp-RejectLinkA>Rejeitar Todos</span></div><div id=oPrivallyApp-AcceptBox><span id=oPrivallyApp-AcceptLink class=oPrivallyApp-AcceptLinkA>Aceitar Todos</span></div></div></div></div></div></div>
   `;
 
-  document.body.insertAdjacentHTML("beforeend", template);
+  window.onload = (event) => {
+    console.log("page is fully loaded");
+
+    document.body.insertAdjacentHTML("beforeend", template);
+  };
 })();
