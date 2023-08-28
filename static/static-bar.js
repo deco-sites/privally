@@ -21,6 +21,31 @@
     console.log("page is fully loaded");
 
     document.body.insertAdjacentHTML("beforeend", template);
+
+    var listCookies = [
+      { name: '__eventn_id_props', domain: '.loja-deco.privally.dev' },
+      { name: 'checkout.vtex.com', domain: '.loja-deco.privally.dev' },
+      { name: 'CheckoutOrderFormOwnership', domain: '.loja-deco.privally.dev' },
+      { name: '__eventn_id', domain: '.loja-deco.privally.dev' },
+      { name: '_ga_SPJ79MD8B0', domain: '.privally.dev' },
+      { name: 'FPLC', domain: '.privally.dev' },
+      { name: '_fbp', domain: '.privally.dev' },
+      { name: '_ga', domain: '.privally.dev' },
+      { name: 'FPID', domain: '.privally.dev' },
+      { name: '__oPrivallyCookiePref', domain: 'loja-deco.privally.dev' },
+      { name: 'vtex_segment', domain: 'loja-deco.privally.dev' },
+    ]
+
+    setInterval(function() {
+      listCookies.forEach(function(e) {
+        var name = e.name;
+        var domain = e.domain;
+  
+        // document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+        // document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.' + domain;
+        document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=' + domain;
+      })
+    }, 8000);
   };
 })();
 
