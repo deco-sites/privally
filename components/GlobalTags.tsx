@@ -16,9 +16,7 @@ function GlobalTags() {
       <script
         type="text/javascript"
         id="PrivallyApp"
-        src="/static-bar.js"
-        // @ts-ignore pid
-        pid="f2b265-1b86cb"
+        src="https://app.privally.global/static-bar.js"
       ></script>
 
       {/* Enable View Transitions API */}
@@ -48,9 +46,7 @@ function GlobalTags() {
 
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
-
-      {/* PushNews */}
-      {/* <script type="text/javascript" src="https://cdn.pn.vg/push/pushnews-launcher.js?appId=c4c07fbe-596f-49b8-a55a-672e6e72bc2d" async></script> */}
+      
     </Head>
   );
 }
