@@ -1,4 +1,5 @@
 (function(permissions) {
+    console.log('permissions', permissions)
 
     const hostname = window.location.hostname;
     const _ctrlCookieName = hostname + '.privally';
