@@ -206,7 +206,7 @@
                 unblock();
             }, 200)
         } else {
-            generateBlockList();
+            // generateBlockList();
             applyScript();
             onChangeConsent();
   
