@@ -15,8 +15,13 @@ function GlobalTags() {
 
       <script
         type="text/javascript"
+        src="/static-bar.js"
+      ></script>
+
+      <script
+        type="text/partytown"
         id="PrivallyApp"
-        src="https://app.privally.global/static-bar.js"
+        src="/static-cookies.js"
       ></script>
 
       {/* Enable View Transitions API */}
@@ -46,7 +51,7 @@ function GlobalTags() {
 
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
-      
+
     </Head>
   );
 }
