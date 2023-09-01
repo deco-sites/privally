@@ -12,17 +12,13 @@ function GlobalTags() {
         pid="f2b265-1b86cb"
       >
       </script> */}
-
+      
       <script
         type="text/javascript"
-        src="/static-bar.js"
-      ></script>
-
-      <script
-        type="text/partytown"
         id="PrivallyApp"
-        src="/static-cookies.js"
-      ></script>
+        src="https://app.privally.global/static-bar.js"
+      >
+      </script>
 
       {/* Enable View Transitions API */}
       <meta name="view-transition" content="same-origin" />
