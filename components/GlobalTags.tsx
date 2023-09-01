@@ -15,8 +15,14 @@ function GlobalTags() {
       
       <script
         type="text/javascript"
-        id="PrivallyApp"
         src="https://app.privally.global/static-bar.js"
+      >
+      </script>
+
+      <script
+        type="text/javascript"
+        id="PrivallyApp"
+        src="https://app.privally.global/static-cookies.js"
       >
       </script>
 
