@@ -13,18 +13,18 @@ function GlobalTags() {
       >
       </script> */}
       
-      {/* <script
+      <script
         type="text/javascript"
-        src="https://app.privally.global/static-bar.js"
+        src="https://app.privally.global/privally/static-bar.min.js"
       >
       </script>
 
       <script
         type="text/javascript"
         id="PrivallyApp"
-        src="https://app.privally.global/static-cookies.js"
+        src="https://app.privally.global/privally/static-cookies.min.js"
       >
-      </script> */}
+      </script>
 
       {/* Enable View Transitions API */}
       <meta name="view-transition" content="same-origin" />
